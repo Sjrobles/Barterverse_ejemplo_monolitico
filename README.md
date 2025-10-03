@@ -1,7 +1,7 @@
 # Barterverse_ejemplo_monolitico
 Este repositorio surge con la finalidad de hacer un ejemplo monolitico de la aplicación de trueques, haciendo uso de chromaDB, libreria transformers para python, nestJS, solo backend.
 
-### 1. Instalar dependencias Python (FastAPI + NLP)  
+
 ```bash
 pip install fastapi uvicorn transformers keybert sentence-transformers chromadb
 
