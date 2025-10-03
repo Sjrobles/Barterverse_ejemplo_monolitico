@@ -47,7 +47,7 @@ class ProductService {
   }
 
   async searchSimilar(query: string) {
-    // Embedding del query usando Python
+    
     const response = await axios.post('http://localhost:8001/analyze', { text: query });
     const embedding = response.data.embedding;
 
