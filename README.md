@@ -1,6 +1,10 @@
 # Barterverse_ejemplo_monolitico
 Este repositorio surge con la finalidad de hacer un ejemplo monolitico de la aplicación de trueques, haciendo uso de chromaDB, libreria transformers para python, nestJS, solo backend.
 (Solo se ejemplifica el proceso de generación de embeddings y busqueda de embeddings similares en ChromaDB, no se usa base de datos externas como PostgreSQL)
+(Los productos deben guardarse en una base de datos tradicional, guardar solo en Chroma es contraproducente porque pierdes seguridad, flexibilidad y consistencia.
+Lo correcto es que Chroma complemente a Postgres, no que lo reemplace, debe solo ser usado para embeddings)
+
+ChromaDB no es una base de datos pensada para persistencia transaccional.
 
 ```bash
 pip install fastapi uvicorn transformers keybert sentence-transformers chromadb
